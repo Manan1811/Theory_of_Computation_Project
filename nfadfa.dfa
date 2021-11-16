@@ -1,0 +1,14 @@
+Q = {p} {p-q} {p-r} {p-q-r}
+
+Alphabet = 0 1
+
+Transition Table =
+	0	1
+{p}	{p-q}	{p}
+{p-q}	{p-q}	{p-r}
+{p-r}	{p-q-r}	{p-q}
+{p-q-r}	{p-q-r}	{p-q-r}
+
+Start = {p}
+
+Final = {p-r} {p-q-r}
